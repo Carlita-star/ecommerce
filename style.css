@@ -1698,22 +1698,62 @@ section.featured {
   width: 1300px !important;
 }
 
-/* Estilo para contenedor de imagen */
+/* Estilo para el contenedor de imagen */
 .image-container {
-  width: 100%; /* Ancho fijo para todas las imágenes */
-  margin: 10px 0; /* Espacio vertical entre imágenes */
-  border-radius: 8px; /* Bordes redondeados */
-  overflow: hidden; /* Para recortar la imagen si es necesario */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  display: flex; /* Usar flexbox para centrar verticalmente */
-  justify-content: center; /* Centrar horizontalmente */
-  align-items: center; /* Centrar verticalmente */
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Estilo para la imagen dentro del contenedor */
 .image-container img {
-  width: 100%; /* Ocupar todo el espacio disponible */
-  height: auto; /* Mantener la proporción original */
-  display: block; /* Eliminar espacio extra */
-  object-fit: cover; /* Ajustar la imagen manteniendo la relación de aspecto */
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Estilos adicionales */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-md-6 {
+  width: 50%;
+  padding: 15px;
+}
+
+.text {
+  padding: 15px;
+}
+
+/* Añadir estos estilos para corregir posibles problemas de alineación */
+.our_skill .col-md-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Para asegurar que la imagen y el texto ocupen todo el espacio disponible en su columna */
+.our_skill .col-md-6 .text,
+.our_skill .col-md-6 .image-container {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .col-md-6 {
+    width: 100%;
+  }
 }

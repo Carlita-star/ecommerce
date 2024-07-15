@@ -3,7 +3,7 @@
     padding: 0;
 }
 a{
-    text-decoration: none:  !important;
+    text-decoration: none,  !important;
 }
 .header-top .fa.fa-wifi {
     -ms-transform: rotate(7deg); /* IE 9 */
@@ -321,7 +321,7 @@ a{
   text-align: right;
 }
 .footer_logo > img {
-  width: 50px;
+  width: 10px;
   margin-right: 15px;
 }
 .copy_txt p {
@@ -1696,4 +1696,24 @@ section.featured {
 }
 .container {
   width: 1300px !important;
+}
+
+/* Estilo para contenedor de imagen */
+.image-container {
+  width: 100%; /* Ancho fijo para todas las imágenes */
+  margin: 10px 0; /* Espacio vertical entre imágenes */
+  border-radius: 8px; /* Bordes redondeados */
+  overflow: hidden; /* Para recortar la imagen si es necesario */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  display: flex; /* Usar flexbox para centrar verticalmente */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+}
+
+/* Estilo para la imagen dentro del contenedor */
+.image-container img {
+  width: 100%; /* Ocupar todo el espacio disponible */
+  height: auto; /* Mantener la proporción original */
+  display: block; /* Eliminar espacio extra */
+  object-fit: cover; /* Ajustar la imagen manteniendo la relación de aspecto */
 }

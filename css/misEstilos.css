@@ -1,0 +1,16 @@
+.header {
+    position: relative;
+}
+.header img {
+    width: 100%;
+    height: auto;
+}
+.slider.error .text {
+    text-align: center;
+}
+.footer-contact p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+

@@ -1270,7 +1270,10 @@ ul.commentlist li .author-name a {
   height: 565px;
 }
 .s_display {
-  width: 395px;
+  width: 200px; /* Tamaño de la imagen */
+  height: 200px; /* Hacemos la altura igual al ancho para un círculo perfecto */
+  border-radius: 100%; /* Convertir la imagen en un círculo */
+  overflow: hidden; /* Ocultar cualquier parte de la imagen que sobresalga */
 }
 .product-s-display .s_display > img {
   width: 100%;
@@ -1756,4 +1759,26 @@ section.featured {
   .col-md-6 {
     width: 100%;
   }
+}
+
+.product-image-circle {
+  width: 200px; /* Tamaño de la imagen */
+  height: 200px; /* Hacemos la altura igual al ancho para un círculo perfecto */
+  border-radius: 50%; /* Convertir la imagen en un círculo */
+  overflow: hidden; /* Ocultar cualquier parte de la imagen que sobresalga */
+  margin: auto; /* Centrar en el contenedor */
+}
+
+.product-display .product-image-circle img {
+  width: 100%; /* Asegurarse de que la imagen ocupe todo el contenedor circular */
+  height: 100%; /* Asegurarse de que la imagen ocupe toda la altura del contenedor */
+  object-fit: cover; /* Ajustar la imagen manteniendo la relación de aspecto */
+  display: block; /* Eliminar espacio extra */
+}
+
+.product-display .product-title {
+  text-align: center; /* Centrar el texto */
+  margin-top: 10px; /* Espacio entre la imagen y el texto */
+  font-size: 16px; /* Tamaño del texto */
+  font-weight: bold; /* Grosor del texto */
 }

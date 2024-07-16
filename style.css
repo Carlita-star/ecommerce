@@ -3,7 +3,7 @@
     padding: 0;
 }
 a{
-    text-decoration: none:  !important;
+    text-decoration: none,  !important;
 }
 .header-top .fa.fa-wifi {
     -ms-transform: rotate(7deg); /* IE 9 */
@@ -321,7 +321,7 @@ a{
   text-align: right;
 }
 .footer_logo > img {
-  width: 50px;
+  width: 10px;
   margin-right: 15px;
 }
 .copy_txt p {
@@ -1696,4 +1696,64 @@ section.featured {
 }
 .container {
   width: 1300px !important;
+}
+
+/* Estilo para el contenedor de imagen */
+.image-container {
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilo para la imagen dentro del contenedor */
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Estilos adicionales */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-md-6 {
+  width: 50%;
+  padding: 15px;
+}
+
+.text {
+  padding: 15px;
+}
+
+/* Añadir estos estilos para corregir posibles problemas de alineación */
+.our_skill .col-md-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Para asegurar que la imagen y el texto ocupen todo el espacio disponible en su columna */
+.our_skill .col-md-6 .text,
+.our_skill .col-md-6 .image-container {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .col-md-6 {
+    width: 100%;
+  }
 }

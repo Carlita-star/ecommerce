@@ -12,214 +12,31 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/jquery.bxSlider.css">
+    <link rel="stylesheet" href="css/estilosSB.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
-<section class="header-top">
+    <section class="header-top">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <ul>
-                        <li><a href="#">Cuenta</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
+                <div class="col-md-8">
                     <div class="icon">
-                       <a href="#"><i class="fa fa-facebook"></i></a>
-                       <a href="#"><i class="fa fa-twitter"></i></a>
-                       <a href="#"><i class="fa fa-google-plus"></i></a>
+                        <a href="https://www.facebook.com/miflota/"><i class="fa fa-facebook"></i></a>
+                        <a href="https://x.com/mi_flota?mx=2"><i class="fa fa-twitter"></i></a>
+                        <a href="https://workspaceupdates.googleblog.com/2023/04/new-community-features-for-google-chat-and-an-update-currents%20.html"><i class="fa fa-google-plus"></i></a>
+                        <a href="https://www.linkedin.com/company/mi-flota/"><i class="fa fa-linkedin"></i></a>
                     </div>
                 </div>
                 <div class="col-md-4">
-                   <div class="a-right">
-                        <a href="#"><p><span><i class="fa fa-user"></i></span>Iniciar Sesión</p></a>
-                        <a href="#"><p><span><i class="fa fa-pencil"></i></span>Registrarse</p></a>
-                   </div>
-                </div>
-            </div>
-        </div>
-</section>
-<section class="header-catagory">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-                <div class="row">
-                    <div class="col-md-12">
-                        <form id="searchForm">
-                            <select id="tipoEquipo">
-                                <option value="">--Tipo de equipo--</option>
-                                <option value="ABL">Accesorio Brazo Largo</option>
-                                <option value="AB">Accesorios - Barredoras</option>
-                                <option value="ABH">Accesorios - Brazos hidráulico</option>
-                                <option value="AC">Accesorios - Concreteras</option>
-                                <option value="AMH">Accesorios - Martillos hidráulico</option>
-                                <option value="AT">Accesorios - Triturador</option>
-                                <option value="B">Bañeras</option>
-                                <option value="BD">Barredora</option>
-                                <option value="BH">Bombas de hormigón</option>
-                                <option value="C">Cabezales</option>
-                                <option value="CB">Camion Bomba (pluma)</option>
-                                <option value="C4">Camionetas 4x4</option>
-                                <option value="CAM">Campers</option>
-                                <option value="CAR">Cargadoras</option>
-                                <option value="COM">Compactadores</option>
-                                <option value="CM">Compactadores Manuales</option>
-                                <option value="COP">Compresores</option>
-                                <option value="COR">Cortadoras</option>
-                                <option value="DA">Distribuidoras de Asfalto</option>
-                                <option value="DRA">Draga</option>
-                                <option value="DUM">Dumpers</option>
-                                <option value="EP">Elevadores personales</option>
-                                <option value="EXC">Excavadoras</option>
-                                <option value="FIN">Finisher</option>
-                                <option value="FRE">Fresadora</option>
-                                <option value="FUR">Furgones</option>
-                                <option value="GEN">Generadores</option>
-                                <option value="GRA">Gravilladoras</option>
-                                <option value="GF">Grúas Fijas</option>
-                                <option value="GM">Grúas Móviles</option>
-                                <option value="MT">Manipuladores Telescópicos</option>
-                                <option value="MINC">Minicargadores</option>
-                                <option value="MINE">Miniexcavadoras</option>
-                                <option value="MIX">Mixers</option>
-                                <option value="MOL">Molino</option>
-                                <option value="MON">Montacargas</option>
-                                <option value="MA">Motomixer Autocargable</option>
-                                <option value="MOT">Motoniveladoras</option>
-                                <option value="MOR">Motores</option>
-                                <option value="MOS">Motosoldadoras</option>
-                                <option value="PAV">Pavimentadoras</option>
-                                <option value="PER">Perfiladoras</option>
-                                <option value="PEF">Perforadoras</option>
-                                <option value="PH">Perforadoras - Horizontales</option>
-                                <option value="PR">Planchas reversibles</option>
-                                <option value="PDH">Planta Dosificadora de Hormigon</option>
-                                <option value="PA">Plantas de asfalto</option>
-                                <option value="PH">Plantas de hormigon</option>
-                                <option value="PLA">Plataformas</option>
-                                <option value="POR">Portacontenedores</option>
-                                <option value="RB">Remolques cama baja</option>
-                                <option value="RET">Retroexcavadoras</option>
-                                <option value="RLT">Rodillo Liso doble tambor</option>
-                                <option value="RN">Rodillo Neumático</option>
-                                <option value="RDT">Rodillos doble tambor manual</option>
-                                <option value="TI">Torres de Iluminación</option>
-                                <option value="TA">Tractores Agrícolas</option>
-                                <option value="TO">Tractores de Oruga</option>
-                                <option value="TRI">Trituradoras</option>
-                                <option value="VC">Vibrador de concreto</option>
-                                <option value="VIB">Vibroapisonadores</option>
-                                <option value="VOL">Volquetas</option>
-                            </select>
-                            <select id="marcaEquipo">
-                                <option value="">--Marca--</option>
-                                <option value="Allmand">Allmand</option>
-                                <option value="Altron">Altron</option>
-                                <option value="Ammann">Ammann</option>
-                                <option value="Atlas Copco">Atlas Copco</option>
-                                <option value="Baldor">Baldor</option>
-                                <option value="BAOLI">BAOLI</option>
-                                <option value="Bitelli">Bitelli</option>
-                                <option value="Bobcat">Bobcat</option>
-                                <option value="Braus">Braus</option>
-                                <option value="Broad Crow">Broad Crow</option>
-                                <option value="CASE">CASE</option>
-                                <option value="Caterpillar">Caterpillar</option>
-                                <option value="Cemco">Cemco</option>
-                                <option value="Champion">Champion</option>
-                                <option value="Chevrolet">Chevrolet</option>
-                                <option value="Cofano">Cofano</option>
-                                <option value="Comet">Comet</option>
-                                <option value="Crucking">Crucking</option>
-                                <option value="Cummins">Cummins</option>
-                                <option value="DeWalt">DeWalt</option>
-                                <option value="Doosan">Doosan</option>
-                                <option value="Dynapac">Dynapac</option>
-                                <option value="Eicher">Eicher</option>
-                                <option value="ETNYRE">ETNYRE</option>
-                                <option value="Fiat">Fiat</option>
-                                <option value="Ford">Ford</option>
-                                <option value="Furukawa">Furukawa</option>
-                                <option value="Fusen">Fusen</option>
-                                <option value="Galion">Galion</option>
-                                <option value="GENERICO">GENERICO</option>
-                                <option value="Genie">Genie</option>
-                                <option value="Grove">Grove</option>
-                                <option value="HAMM">HAMM</option>
-                                <option value="Hangcha">Hangcha</option>
-                                <option value="Heli">Heli</option>
-                                <option value="Hino">Hino</option>
-                                <option value="Honda">Honda</option>
-                                <option value="Hypac">Hypac</option>
-                                <option value="Hyundai">Hyundai</option>
-                                <option value="HZE">HZE</option>
-                                <option value="Ingersoll Rand">Ingersoll Rand</option>
-                                <option value="International">International</option>
-                                <option value="JAC">JAC</option>
-                                <option value="JCB">JCB</option>
-                                <option value="JLG">JLG</option>
-                                <option value="John Deere">John Deere</option>
-                                <option value="kama">kama</option>
-                                <option value="Katolight">Katolight</option>
-                                <option value="Kenworth">Kenworth</option>
-                                <option value="kipor">kipor</option>
-                                <option value="Kobelco">Kobelco</option>
-                                <option value="Kohler">Kohler</option>
-                                <option value="Komac">Komac</option>
-                                <option value="Komatsu">Komatsu</option>
-                                <option value="Lee Boy">Lee Boy</option>
-                                <option value="Lincoln Ranger">Lincoln Ranger</option>
-                                <option value="LiuGong">LiuGong</option>
-                                <option value="lonking">lonking</option>
-                                <option value="Luna">Luna</option>
-                                <option value="Mack">Mack</option>
-                                <option value="Mágnum">Mágnum</option>
-                                <option value="Maschio Gaspardo">Maschio Gaspardo</option>
-                                <option value="Massey Ferguson">Massey Ferguson</option>
-                                <option value="Miller">Miller</option>
-                                <option value="New Holland">New Holland</option>
-                                <option value="Nissan">Nissan</option>
-                                <option value="Olympian">Olympian</option>
-                                <option value="OUKE">OUKE</option>
-                                <option value="Parker">Parker</option>
-                                <option value="Perkins">Perkins</option>
-                                <option value="Piccin">Piccin</option>
-                                <option value="Piccini">Piccini</option>
-                                <option value="Porter">Porter</option>
-                                <option value="Potain">Potain</option>
-                                <option value="Putzmeister">Putzmeister</option>
-                                <option value="Raodtec">Raodtec</option>
-                                <option value="Roadway">Roadway</option>
-                                <option value="SBM Wageneder">SBM Wageneder</option>
-                                <option value="SDLG">SDLG</option>
-                                <option value="SEM">SEM</option>
-                                <option value="Shacman">Shacman</option>
-                                <option value="SHANTUI">SHANTUI</option>
-                                <option value="SKD">SKD</option>
-                                <option value="Soosan">Soosan</option>
-                                <option value="Stenuik">Stenuik</option>
-                                <option value="Stone">Stone</option>
-                                <option value="Sullair">Sullair</option>
-                                <option value="Taylor">Taylor</option>
-                                <option value="TCM">TCM</option>
-                                <option value="Toyota">Toyota</option>
-                                <option value="Universal">Universal</option>
-                                <option value="Valtra">Valtra</option>
-                                <option value="Volvo">Volvo</option>
-                                <option value="Weber">Weber</option>
-                                <option value="Yale">Yale</option>
-                                <option value="ZoomLion">ZoomLion</option>
-                            </select>
-                            <button type="button" id="searchButton"><i class="fa fa-search"></i></button>
-                        </form>
+                    <div class="a-right">
+                        <a href="Login.html"><p><span><i class="fa fa-user"></i></span>Login</p></a>
+                        <a href="Registro.html"><p><span><i class="fa fa-pencil"></i></span>Register</p></a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<div id="searchResults"></div>
+    </section>
 <div class="clear"></div>
 <section class="header">
         <div class="container">
@@ -232,9 +49,10 @@
                 <div class="col-md-7">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="index.html">Inicio</a></li>
-                        <li><a href="prodact-display.html">Máquinas en Venta</a></li>
-                        <li><a href="prodact-two.html">Máquinas en Alquiler</a></li>
-                        <li><a href="#">Tienda</a></li>
+                        <li><a href="prodact-display.html">Venta</a></li>
+                        <li><a href="prodact-two.html">Alquiler</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
                     </ul>
                 </div>
                 <div class="col-md-2">
@@ -248,6 +66,186 @@
 </header>
 <section class="header-feahion">
     <img src="img/slider-about.jpg" alt="">
+    <section class="header-catagory">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form id="searchForm">
+                                <select id="tipoEquipo">
+                                    <option value="">--Tipo de equipo--</option>
+                                    <option value="ABL">Accesorio Brazo Largo</option>
+                                    <option value="AB">Accesorios - Barredoras</option>
+                                    <option value="ABH">Accesorios - Brazos hidráulico</option>
+                                    <option value="AC">Accesorios - Concreteras</option>
+                                    <option value="AMH">Accesorios - Martillos hidráulico</option>
+                                    <option value="AT">Accesorios - Triturador</option>
+                                    <option value="B">Bañeras</option>
+                                    <option value="BD">Barredora</option>
+                                    <option value="BH">Bombas de hormigón</option>
+                                    <option value="C">Cabezales</option>
+                                    <option value="CB">Camion Bomba (pluma)</option>
+                                    <option value="C4">Camionetas 4x4</option>
+                                    <option value="CAM">Campers</option>
+                                    <option value="CAR">Cargadoras</option>
+                                    <option value="COM">Compactadores</option>
+                                    <option value="CM">Compactadores Manuales</option>
+                                    <option value="COP">Compresores</option>
+                                    <option value="COR">Cortadoras</option>
+                                    <option value="DA">Distribuidoras de Asfalto</option>
+                                    <option value="DRA">Draga</option>
+                                    <option value="DUM">Dumpers</option>
+                                    <option value="EP">Elevadores personales</option>
+                                    <option value="EXC">Excavadoras</option>
+                                    <option value="FIN">Finisher</option>
+                                    <option value="FRE">Fresadora</option>
+                                    <option value="FUR">Furgones</option>
+                                    <option value="GEN">Generadores</option>
+                                    <option value="GRA">Gravilladoras</option>
+                                    <option value="GF">Grúas Fijas</option>
+                                    <option value="GM">Grúas Móviles</option>
+                                    <option value="MT">Manipuladores Telescópicos</option>
+                                    <option value="MINC">Minicargadores</option>
+                                    <option value="MINE">Miniexcavadoras</option>
+                                    <option value="MIX">Mixers</option>
+                                    <option value="MOL">Molino</option>
+                                    <option value="MON">Montacargas</option>
+                                    <option value="MA">Motomixer Autocargable</option>
+                                    <option value="MOT">Motoniveladoras</option>
+                                    <option value="MOR">Motores</option>
+                                    <option value="MOS">Motosoldadoras</option>
+                                    <option value="PAV">Pavimentadoras</option>
+                                    <option value="PER">Perfiladoras</option>
+                                    <option value="PEF">Perforadoras</option>
+                                    <option value="PH">Perforadoras - Horizontales</option>
+                                    <option value="PR">Planchas reversibles</option>
+                                    <option value="PDH">Planta Dosificadora de Hormigon</option>
+                                    <option value="PA">Plantas de asfalto</option>
+                                    <option value="PH">Plantas de hormigon</option>
+                                    <option value="PLA">Plataformas</option>
+                                    <option value="POR">Portacontenedores</option>
+                                    <option value="RB">Remolques cama baja</option>
+                                    <option value="RET">Retroexcavadoras</option>
+                                    <option value="RLT">Rodillo Liso doble tambor</option>
+                                    <option value="RN">Rodillo Neumático</option>
+                                    <option value="RDT">Rodillos doble tambor manual</option>
+                                    <option value="TI">Torres de Iluminación</option>
+                                    <option value="TA">Tractores Agrícolas</option>
+                                    <option value="TO">Tractores de Oruga</option>
+                                    <option value="TRI">Trituradoras</option>
+                                    <option value="VC">Vibrador de concreto</option>
+                                    <option value="VIB">Vibroapisonadores</option>
+                                    <option value="VOL">Volquetas</option>
+                                </select>
+                                <select id="marcaEquipo">
+                                    <option value="">--Marca--</option>
+                                    <option value="Allmand">Allmand</option>
+                                    <option value="Altron">Altron</option>
+                                    <option value="Ammann">Ammann</option>
+                                    <option value="Atlas Copco">Atlas Copco</option>
+                                    <option value="Baldor">Baldor</option>
+                                    <option value="BAOLI">BAOLI</option>
+                                    <option value="Bitelli">Bitelli</option>
+                                    <option value="Bobcat">Bobcat</option>
+                                    <option value="Braus">Braus</option>
+                                    <option value="Broad Crow">Broad Crow</option>
+                                    <option value="CASE">CASE</option>
+                                    <option value="Caterpillar">Caterpillar</option>
+                                    <option value="Cemco">Cemco</option>
+                                    <option value="Champion">Champion</option>
+                                    <option value="Chevrolet">Chevrolet</option>
+                                    <option value="Cofano">Cofano</option>
+                                    <option value="Comet">Comet</option>
+                                    <option value="Crucking">Crucking</option>
+                                    <option value="Cummins">Cummins</option>
+                                    <option value="DeWalt">DeWalt</option>
+                                    <option value="Doosan">Doosan</option>
+                                    <option value="Dynapac">Dynapac</option>
+                                    <option value="Eicher">Eicher</option>
+                                    <option value="ETNYRE">ETNYRE</option>
+                                    <option value="Fiat">Fiat</option>
+                                    <option value="Ford">Ford</option>
+                                    <option value="Furukawa">Furukawa</option>
+                                    <option value="Fusen">Fusen</option>
+                                    <option value="Galion">Galion</option>
+                                    <option value="GENERICO">GENERICO</option>
+                                    <option value="Genie">Genie</option>
+                                    <option value="Grove">Grove</option>
+                                    <option value="HAMM">HAMM</option>
+                                    <option value="Hangcha">Hangcha</option>
+                                    <option value="Heli">Heli</option>
+                                    <option value="Hino">Hino</option>
+                                    <option value="Honda">Honda</option>
+                                    <option value="Hypac">Hypac</option>
+                                    <option value="Hyundai">Hyundai</option>
+                                    <option value="HZE">HZE</option>
+                                    <option value="Ingersoll Rand">Ingersoll Rand</option>
+                                    <option value="International">International</option>
+                                    <option value="JAC">JAC</option>
+                                    <option value="JCB">JCB</option>
+                                    <option value="JLG">JLG</option>
+                                    <option value="John Deere">John Deere</option>
+                                    <option value="kama">kama</option>
+                                    <option value="Katolight">Katolight</option>
+                                    <option value="Kenworth">Kenworth</option>
+                                    <option value="kipor">kipor</option>
+                                    <option value="Kobelco">Kobelco</option>
+                                    <option value="Kohler">Kohler</option>
+                                    <option value="Komac">Komac</option>
+                                    <option value="Komatsu">Komatsu</option>
+                                    <option value="Lee Boy">Lee Boy</option>
+                                    <option value="Lincoln Ranger">Lincoln Ranger</option>
+                                    <option value="LiuGong">LiuGong</option>
+                                    <option value="lonking">lonking</option>
+                                    <option value="Luna">Luna</option>
+                                    <option value="Mack">Mack</option>
+                                    <option value="Mágnum">Mágnum</option>
+                                    <option value="Maschio Gaspardo">Maschio Gaspardo</option>
+                                    <option value="Massey Ferguson">Massey Ferguson</option>
+                                    <option value="Miller">Miller</option>
+                                    <option value="New Holland">New Holland</option>
+                                    <option value="Nissan">Nissan</option>
+                                    <option value="Olympian">Olympian</option>
+                                    <option value="OUKE">OUKE</option>
+                                    <option value="Parker">Parker</option>
+                                    <option value="Perkins">Perkins</option>
+                                    <option value="Piccin">Piccin</option>
+                                    <option value="Piccini">Piccini</option>
+                                    <option value="Porter">Porter</option>
+                                    <option value="Potain">Potain</option>
+                                    <option value="Putzmeister">Putzmeister</option>
+                                    <option value="Raodtec">Raodtec</option>
+                                    <option value="Roadway">Roadway</option>
+                                    <option value="SBM Wageneder">SBM Wageneder</option>
+                                    <option value="SDLG">SDLG</option>
+                                    <option value="SEM">SEM</option>
+                                    <option value="Shacman">Shacman</option>
+                                    <option value="SHANTUI">SHANTUI</option>
+                                    <option value="SKD">SKD</option>
+                                    <option value="Soosan">Soosan</option>
+                                    <option value="Stenuik">Stenuik</option>
+                                    <option value="Stone">Stone</option>
+                                    <option value="Sullair">Sullair</option>
+                                    <option value="Taylor">Taylor</option>
+                                    <option value="TCM">TCM</option>
+                                    <option value="Toyota">Toyota</option>
+                                    <option value="Universal">Universal</option>
+                                    <option value="Valtra">Valtra</option>
+                                    <option value="Volvo">Volvo</option>
+                                    <option value="Weber">Weber</option>
+                                    <option value="Yale">Yale</option>
+                                    <option value="ZoomLion">ZoomLion</option>
+                                </select>
+                                <button type="button" id="searchButton"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="searchResults"></div>
 </section>
 <section class="product-display">
     <div class="container">
@@ -511,11 +509,12 @@
             <div class="col-md-12">
                 <div class="slider-container">
                     <ul id="slider">
-                        <li><a href="#"><img src="img/brand-img1.jpg"></a></li>
-                        <li><a href="#"><img src="img/brand-img2.jpg"></a></li>
-                        <li><a href="#"><img src="img/brand-img3.jpg"></a></li>
-                        <li><a href="#"><img src="img/brand-img4.jpg"></a></li>
-                        <li><a href="#"><img src="img/brand-img5.jpg"></a></li>
+                        <li><a href="#"><img src="img/marcas/Cat.png"></a></li>
+                        <li><a href="#"><img src="img/marcas/Doosan.png"></a></li>
+                        <li><a href="#"><img src="img/marcas/Hyndai.png"></a></li>
+                        <li><a href="#"><img src="img/marcas/Komatsu.png"></a></li>
+                        <li><a href="#"><img src="img/marcas/visa.png"></a></li>
+                        <li><a href="#"><img src="img/marcas/Volvo.png"></a></li>
                     </ul>
                 </div>
             </div>
@@ -526,25 +525,17 @@
     <div class="footer_top">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <h2>INFORMATION</h2>
-                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>Best sellers</p></a>
-                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>Best sellers</p></a>
-                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>Best sellers</p></a>
-                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>Best sellers</p></a>
-                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>Best sellers</p></a>
-                </div>
                 <div class="col-md-4 center">
-                    <h2>INFORMATION</h2>
-                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>Best sellers</p></a>
-                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>Best sellers</p></a>
-                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>Best sellers</p></a>
-                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>Best sellers</p></a>
-                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>Best sellers</p></a>
+                    <h2>Información</h2>
+                    <a href="index.html"><p><i class="fa fa-circle" aria-hidden="true"></i>Inicio</p></a>
+                    <a href="prodact-display.html"><p><i class="fa fa-circle" aria-hidden="true"></i>Venta</p></a>
+                    <a href="prodact-two.html"><p><i class="fa fa-circle" aria-hidden="true"></i>Alquiler</p></a>
+                    <a href="blog.html"><p><i class="fa fa-circle" aria-hidden="true"></i>Blog</p></a>
+                    <a href="contact.html"><p><i class="fa fa-circle" aria-hidden="true"></i>Contacto</p></a>
                 </div>
                 <div class="col-md-4">
                     <div class="footer-contact">
-                        <h2>CONTACT US</h2>
+                        <h2>Nuestros Contactos</h2>
                         <a href="#"><p><i class="fa fa-map-marker" aria-hidden="true"></i>Rangpur , Bangladesh</p></a>
                         <a href="#"><p><i class="fa fa-phone" aria-hidden="true"></i>+88 01761070282</p></a>
                         <a href="#"><p><i class="fa fa-envelope" aria-hidden="true"></i>sshahriar458@gmail.com</p></a>

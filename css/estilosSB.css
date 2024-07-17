@@ -80,4 +80,60 @@
     font-size: 16px; /* Tamaño del texto */
     font-weight: bold; /* Grosor del texto */
   }
-  
+
+/* Estilos para la sección de Marcas */
+.brands {
+  background-color: #f2f2f2;
+  padding: 50px 0;
+}
+
+.brands .bar {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.brands .bar h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.brands .bar img {
+  max-width: 100%;
+}
+
+/* Estilos para la sección de Logos de Marcas */
+.brand-logos {
+  background-color: #fff;
+  padding: 50px 0;
+}
+
+.brand-logos .brand-slider {
+  text-align: center;
+}
+
+.brand-logos #slider {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.brand-logos #slider li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.brand-logos #slider li:last-child {
+  margin-right: 0;
+}
+
+.brand-logos #slider li a {
+  display: block;
+  width: 120px; /* Ancho de cada imagen */
+  height: 80px; /* Alto de cada imagen */
+}
+
+.brand-logos #slider li img {
+  max-width: 100%;
+  max-height: 100%;
+}
